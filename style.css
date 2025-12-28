@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: #222;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "sec1 sec2 sec3 sec4 "
+    "sec1 sec5 sec5 sec4 "
+    "sec6 sec5 sec5 sec7"
+    "sec9 sec9 sec8 sec7";
+  gap: 10px;
+  padding: 10px;
+}
+
+section img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+section:hover {
+  transform: scale(1.02);
+  transition: all 0.7s ease-in-out;
+}
+
+section {
+  border-radius: 10px;
+  overflow: hidden;
+  min-height: 0;
+}
+
+section:nth-child(1) {
+  height: 100%;
+  width: 100%;
+  background-color: chartreuse;
+  grid-area: sec1;
+}
+
+section:nth-child(2) {
+  height: 100%;
+  width: 100%;
+  background-color: coral;
+  grid-area: sec2;
+}
+
+section:nth-child(3) {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+  grid-area: sec3;
+}
+
+section:nth-child(4) {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  grid-area: sec4;
+}
+
+section:nth-child(5) {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 111, 255);
+  grid-area: sec5;
+}
+
+section:nth-child(6) {
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  grid-area: sec6;
+}
+
+section:nth-child(7) {
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  grid-area: sec7;
+}
+
+section:nth-child(8) {
+  height: 100%;
+  width: 100%;
+  background-color: lightgreen;
+  grid-area: sec8;
+}
+
+section:nth-child(9) {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  grid-area: sec9;
+}
+/* 
+section:nth-child(10){
+    height: 100%;
+    width: 100%;
+    background-color: brown;
+}
+
+section:nth-child(11){
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+}   
+
+section:nth-child(12){
+    height: 100%;
+    width: 100%;
+    background-color: lavender;
+}
+
+section:nth-child(13){
+    height: 100%;
+    width: 100%;
+    background-color: gold;
+}
+
+section:nth-child(14){
+    height: 100%;
+    width: 100%;
+    background-color: silver;
+}
+
+section:nth-child(15){
+    height: 100%;
+    width: 100%;
+    background-color: maroon;
+}
+
+section:nth-child(16){
+    height: 100%;
+    width: 100%;
+    background-color: navy;
+} */
